@@ -1,0 +1,7 @@
+1. Understand the computer virus by definition from the papers we have in public domain. Virus has self-replicating behaviour by default.
+1.a List 4-5 viruses by each member that follows the definition
+
+2. Implementing such program/exec agreeing with #1
+
+3. We need to understand the essential behaviour of computer virus
+
