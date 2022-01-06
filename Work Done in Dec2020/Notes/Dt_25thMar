@@ -1,0 +1,5 @@
+1. Used NASM to write a x86 execve assembly code
+2. Made three important scripts, reverse.py, compile.sh and cut.sh for that comes in very handy while working with NASM.
+3. Relevant youtube link for reference: https://www.youtube.com/watch?v=QEaIcUnnPwE&list=PLzKIBgD3ky20YVgE8Rp3fEt42uICoaOp9&index=5
+4. for a command in terminal, you can use, man, info or tldr
+5. 
