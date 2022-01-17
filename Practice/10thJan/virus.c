@@ -6,7 +6,7 @@
 // Searches for a victim to copy the virus into
 const char *fileSearch()
 {
-    char *fileName = "victim.c";
+    char *fileName = "./target/victim.c";
     return fileName;
 }
 
