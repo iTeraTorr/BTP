@@ -1,5 +1,4 @@
-#include <stdio.h>
-int main(int c, char *argv[])
-{
-    printf("Hello\n");
+#include  <stdio.h>
+int main(){
+printf("Hello\n");
 }
