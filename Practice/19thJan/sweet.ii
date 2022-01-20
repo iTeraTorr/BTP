@@ -905,6 +905,6 @@ extern void funlockfile (FILE *__stream) throw ();
 
 # 3 "sweet.c"
 int main(){
- printf("Sweet world!");
+ printf("Sweet worlds!");
  return 0;
 }
