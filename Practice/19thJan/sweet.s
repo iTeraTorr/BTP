@@ -2,7 +2,7 @@
 	.text
 	.section	.rodata
 .LC0:
-	.string	"Sweet worlds!"
+	.string	"Sweet world!"
 	.text
 	.globl	main
 	.type	main, @function
@@ -17,7 +17,7 @@ main:
 	leaq	.LC0(%rip), %rdi
 	movl	$0, %eax
 	call	printf@PLT
-	movl	$0, %eax
+	movl	$1, %eax
 	popq	%rbp
 	.cfi_def_cfa 7, 8
 	ret

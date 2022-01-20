@@ -123,7 +123,7 @@ Disassembly of section .text:
  64e:	48 8d 3d 9f 00 00 00 	lea    rdi,[rip+0x9f]        # 6f4 <_IO_stdin_used+0x4>
  655:	b8 00 00 00 00       	mov    eax,0x0
  65a:	e8 c1 fe ff ff       	call   520 <printf@plt>
- 65f:	b8 00 00 00 00       	mov    eax,0x0
+ 65f:	b8 01 00 00 00       	mov    eax,0x1
  664:	5d                   	pop    rbp
  665:	c3                   	ret    
  666:	66 2e 0f 1f 84 00 00 	nop    WORD PTR cs:[rax+rax*1+0x0]

@@ -1,191 +1,191 @@
 execve("./sweet", ["./sweet"], ["CLUTTER_IM_MODULE=xim", "NVM_DIR=/home/ruchir/.nvm", "LS_COLORS=rs=0:di=01;34:ln=01;36"..., "LC_MEASUREMENT=en_IN.UTF-8", "LESSCLOSE=/usr/bin/lesspipe %s %"..., "LC_PAPER=en_IN.UTF-8", "LC_MONETARY=en_IN.UTF-8", "XDG_MENU_PREFIX=gnome-", "LANG=en_GB.UTF-8", "MANAGERPID=7545", "DISPLAY=:0", "OLDPWD=/media/ruchir/iTeraTorr/B"..., "ORIGINAL_XDG_CURRENT_DESKTOP=ubu"..., "INVOCATION_ID=a0bad970b075420bbd"..., "EMAIL_PASS=ruchir@123", "GNOME_SHELL_SESSION_MODE=ubuntu", "COLORTERM=truecolor", "NVM_CD_FLAGS=", "EMAIL_USER=cse180001044@iiti.ac."..., "ZEITGEIST_DATA_PATH=/home/ruchir"..., "USERNAME=ruchir", "CHROME_DESKTOP=code-url-handler."..., "XDG_VTNR=2", "GIO_LAUNCHED_DESKTOP_FILE_PID=17"..., "SSH_AUTH_SOCK=/run/user/1000/key"..., "MANDATORY_PATH=/usr/share/gconf/"..., "LC_NAME=en_IN.UTF-8", "XDG_SESSION_ID=2", "USER=ruchir", "DESKTOP_SESSION=ubuntu", "QT4_IM_MODULE=xim", "PT7HOME=/opt/pt", "TEXTDOMAINDIR=/usr/share/locale/", "QT_DEVICE_PIXEL_RATIO=auto", "DEFAULTS_PATH=/usr/share/gconf/u"..., "PWD=/media/ruchir/iTeraTorr/BTP_"..., "HOME=/home/ruchir", "JOURNAL_STREAM=9:155265", "TEXTDOMAIN=im-config", "SSH_AGENT_PID=7835", "TERM_PROGRAM=vscode", "TERM_PROGRAM_VERSION=1.63.2", "MAN_DISABLE_SECCOMP=1", "QT_ACCESSIBILITY=1", "XDG_SESSION_TYPE=x11", "XDG_DATA_DIRS=/usr/share/ubuntu:"..., "GITHUB_TOKEN=ghp_or7gAHUazK9nuno"..., "QSYS_ROOTDIR=/home/ruchir/Quartu"..., "XDG_SESSION_DESKTOP=ubuntu", "LC_ADDRESS=en_IN.UTF-8", "DBUS_STARTER_ADDRESS=unix:path=/"..., "LC_NUMERIC=en_IN.UTF-8", "GTK_MODULES=gail:atk-bridge", "PAPERSIZE=a4", "WINDOWPATH=2", "SHELL=/bin/bash", "TERM=xterm-256color", "QT_IM_MODULE=ibus", "XMODIFIERS=@im=ibus", "IM_CONFIG_PHASE=2", "DBUS_STARTER_BUS_TYPE=session", "NVM_BIN=/home/ruchir/.nvm/versio"..., "XDG_CURRENT_DESKTOP=Unity", "GPG_AGENT_INFO=/run/user/1000/gn"..., "GIO_LAUNCHED_DESKTOP_FILE=/usr/s"..., "SHLVL=3", "XDG_SEAT=seat0", "LANGUAGE=en_IN:en", "LC_TELEPHONE=en_IN.UTF-8", "GDK_BACKEND=x11", "GDMSESSION=ubuntu", "GNOME_DESKTOP_SESSION_ID=this-is"..., "LOGNAME=ruchir", "DBUS_SESSION_BUS_ADDRESS=unix:pa"..., "XDG_RUNTIME_DIR=/run/user/1000", "XAUTHORITY=/run/user/1000/gdm/Xa"..., "XDG_CONFIG_DIRS=/etc/xdg/xdg-ubu"..., "PATH=/home/ruchir/.cargo/bin:/ho"..., "LC_IDENTIFICATION=en_IN.UTF-8", "SESSION_MANAGER=local/iteratorr:"..., "BREAKPAD_DUMP_LOCATION=/home/ruc"..., "LESSOPEN=| /usr/bin/lesspipe %s", "GTK_IM_MODULE=ibus", "LC_TIME=en_IN.UTF-8", "_=/usr/bin/strace"]) = 0
-brk(NULL)                               = 0x562b88ccd000
+brk(NULL)                               = 0x555c1f3fd000
 access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
 access("/etc/ld.so.preload", R_OK)      = 0
 openat(AT_FDCWD, "/etc/ld.so.preload", O_RDONLY|O_CLOEXEC) = 3
 fstat(3, {st_dev=makedev(8, 10), st_ino=5250569, st_mode=S_IFREG|0644, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=8, st_size=49, st_atime=1642600898 /* 2022-01-19T19:31:38.007969686+0530 */, st_atime_nsec=7969686, st_mtime=1619147884 /* 2021-04-23T08:48:04+0530 */, st_mtime_nsec=0, st_ctime=1621238340 /* 2021-05-17T13:29:00.358980337+0530 */, st_ctime_nsec=358980337}) = 0
-mmap(NULL, 49, PROT_READ|PROT_WRITE, MAP_PRIVATE, 3, 0) = 0x7fac2b230000
+mmap(NULL, 49, PROT_READ|PROT_WRITE, MAP_PRIVATE, 3, 0) = 0x7f15ec431000
 close(3)                                = 0
 openat(AT_FDCWD, "/usr/local/lib/AppProtection/libAppProtection.so", O_RDONLY|O_CLOEXEC) = 3
 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220[\0\0\0\0\0\0"..., 832) = 832
 fstat(3, {st_dev=makedev(8, 10), st_ino=6701325, st_mode=S_IFREG|0755, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=352, st_size=178808, st_atime=1642600898 /* 2022-01-19T19:31:38.115968064+0530 */, st_atime_nsec=115968064, st_mtime=1619147884 /* 2021-04-23T08:48:04+0530 */, st_mtime_nsec=0, st_ctime=1621238337 /* 2021-05-17T13:28:57.539122455+0530 */, st_ctime_nsec=539122455}) = 0
-mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fac2b22e000
-mmap(NULL, 2246056, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fac2ade3000
-mprotect(0x7fac2ae05000, 2093056, PROT_NONE) = 0
-mmap(0x7fac2b004000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x21000) = 0x7fac2b004000
-mmap(0x7fac2b006000, 5544, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fac2b006000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f15ec42f000
+mmap(NULL, 2246056, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f15ebfe4000
+mprotect(0x7f15ec006000, 2093056, PROT_NONE) = 0
+mmap(0x7f15ec205000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x21000) = 0x7f15ec205000
+mmap(0x7f15ec207000, 5544, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f15ec207000
 close(3)                                = 0
-munmap(0x7fac2b230000, 49)              = 0
+munmap(0x7f15ec431000, 49)              = 0
 openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
 fstat(3, {st_dev=makedev(8, 10), st_ino=5244300, st_mode=S_IFREG|0644, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=256, st_size=130122, st_atime=1642646227 /* 2022-01-20T08:07:07.162808310+0530 */, st_atime_nsec=162808310, st_mtime=1642646226 /* 2022-01-20T08:07:06.850809338+0530 */, st_mtime_nsec=850809338, st_ctime=1642646226 /* 2022-01-20T08:07:06.902809167+0530 */, st_ctime_nsec=902809167}) = 0
-mmap(NULL, 130122, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fac2b20e000
+mmap(NULL, 130122, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7f15ec40f000
 close(3)                                = 0
 access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20\35\2\0\0\0\0\0"..., 832) = 832
 fstat(3, {st_dev=makedev(8, 10), st_ino=2755010, st_mode=S_IFREG|0755, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=3968, st_size=2030928, st_atime=1642600898 /* 2022-01-19T19:31:38.115968064+0530 */, st_atime_nsec=115968064, st_mtime=1607359089 /* 2020-12-07T22:08:09+0530 */, st_mtime_nsec=0, st_ctime=1608220748 /* 2020-12-17T21:29:08.736477151+0530 */, st_ctime_nsec=736477151}) = 0
-mmap(NULL, 4131552, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fac2a9f2000
-mprotect(0x7fac2abd9000, 2097152, PROT_NONE) = 0
-mmap(0x7fac2add9000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e7000) = 0x7fac2add9000
-mmap(0x7fac2addf000, 15072, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fac2addf000
+mmap(NULL, 4131552, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f15ebbf3000
+mprotect(0x7f15ebdda000, 2097152, PROT_NONE) = 0
+mmap(0x7f15ebfda000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1e7000) = 0x7f15ebfda000
+mmap(0x7f15ebfe0000, 15072, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f15ebfe0000
 close(3)                                = 0
 access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpthread.so.0", O_RDONLY|O_CLOEXEC) = 3
 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0000b\0\0\0\0\0\0"..., 832) = 832
 fstat(3, {st_dev=makedev(8, 10), st_ino=2755025, st_mode=S_IFREG|0755, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=288, st_size=144976, st_atime=1642600898 /* 2022-01-19T19:31:38.115968064+0530 */, st_atime_nsec=115968064, st_mtime=1607359089 /* 2020-12-07T22:08:09+0530 */, st_mtime_nsec=0, st_ctime=1608220748 /* 2020-12-17T21:29:08.760477150+0530 */, st_ctime_nsec=760477150}) = 0
-mmap(NULL, 2221184, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fac2a7d3000
-mprotect(0x7fac2a7ed000, 2093056, PROT_NONE) = 0
-mmap(0x7fac2a9ec000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19000) = 0x7fac2a9ec000
-mmap(0x7fac2a9ee000, 13440, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fac2a9ee000
+mmap(NULL, 2221184, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f15eb9d4000
+mprotect(0x7f15eb9ee000, 2093056, PROT_NONE) = 0
+mmap(0x7f15ebbed000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19000) = 0x7f15ebbed000
+mmap(0x7f15ebbef000, 13440, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f15ebbef000
 close(3)                                = 0
 access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\16\0\0\0\0\0\0"..., 832) = 832
 fstat(3, {st_dev=makedev(8, 10), st_ino=2755013, st_mode=S_IFREG|0644, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=32, st_size=14560, st_atime=1642600898 /* 2022-01-19T19:31:38.115968064+0530 */, st_atime_nsec=115968064, st_mtime=1607359089 /* 2020-12-07T22:08:09+0530 */, st_mtime_nsec=0, st_ctime=1608220748 /* 2020-12-17T21:29:08.744477150+0530 */, st_ctime_nsec=744477150}) = 0
-mmap(NULL, 2109712, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fac2a5cf000
-mprotect(0x7fac2a5d2000, 2093056, PROT_NONE) = 0
-mmap(0x7fac2a7d1000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fac2a7d1000
+mmap(NULL, 2109712, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f15eb7d0000
+mprotect(0x7f15eb7d3000, 2093056, PROT_NONE) = 0
+mmap(0x7f15eb9d2000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f15eb9d2000
 close(3)                                = 0
 access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libX11.so.6", O_RDONLY|O_CLOEXEC) = 3
 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300\207\1\0\0\0\0\0"..., 832) = 832
 fstat(3, {st_dev=makedev(8, 10), st_ino=5384632, st_mode=S_IFREG|0644, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=2496, st_size=1277384, st_atime=1642600898 /* 2022-01-19T19:31:38.115968064+0530 */, st_atime_nsec=115968064, st_mtime=1621444070 /* 2021-05-19T22:37:50+0530 */, st_mtime_nsec=0, st_ctime=1622081871 /* 2021-05-27T07:47:51.394005030+0530 */, st_ctime_nsec=394005030}) = 0
-mmap(NULL, 3374392, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fac2a297000
-mprotect(0x7fac2a3ca000, 2097152, PROT_NONE) = 0
-mmap(0x7fac2a5ca000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x133000) = 0x7fac2a5ca000
+mmap(NULL, 3374392, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f15eb498000
+mprotect(0x7f15eb5cb000, 2097152, PROT_NONE) = 0
+mmap(0x7f15eb7cb000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x133000) = 0x7f15eb7cb000
 close(3)                                = 0
 access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libxcb.so.1", O_RDONLY|O_CLOEXEC) = 3
 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P\261\0\0\0\0\0\0"..., 832) = 832
 fstat(3, {st_dev=makedev(8, 10), st_ino=5383323, st_mode=S_IFREG|0644, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=320, st_size=162232, st_atime=1642600898 /* 2022-01-19T19:31:38.115968064+0530 */, st_atime_nsec=115968064, st_mtime=1529578379 /* 2018-06-21T16:22:59+0530 */, st_mtime_nsec=0, st_ctime=1600068381 /* 2020-09-14T12:56:21.396559980+0530 */, st_ctime_nsec=396559980}) = 0
-mmap(NULL, 2257576, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fac2a06f000
-mprotect(0x7fac2a095000, 2097152, PROT_NONE) = 0
-mmap(0x7fac2a295000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x26000) = 0x7fac2a295000
+mmap(NULL, 2257576, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f15eb270000
+mprotect(0x7f15eb296000, 2097152, PROT_NONE) = 0
+mmap(0x7f15eb496000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x26000) = 0x7f15eb496000
 close(3)                                = 0
 access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libstdc++.so.6", O_RDONLY|O_CLOEXEC) = 3
 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\304\10\0\0\0\0\0"..., 832) = 832
 fstat(3, {st_dev=makedev(8, 10), st_ino=5383137, st_mode=S_IFREG|0644, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=3120, st_size=1594864, st_atime=1642600898 /* 2022-01-19T19:31:38.115968064+0530 */, st_atime_nsec=115968064, st_mtime=1583843394 /* 2020-03-10T17:59:54+0530 */, st_mtime_nsec=0, st_ctime=1600068380 /* 2020-09-14T12:56:20.716220013+0530 */, st_ctime_nsec=716220013}) = 0
-mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fac2b20c000
-mmap(NULL, 3702848, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fac29ce6000
-mprotect(0x7fac29e5f000, 2097152, PROT_NONE) = 0
-mmap(0x7fac2a05f000, 49152, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x179000) = 0x7fac2a05f000
-mmap(0x7fac2a06b000, 12352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fac2a06b000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f15ec40d000
+mmap(NULL, 3702848, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f15eaee7000
+mprotect(0x7f15eb060000, 2097152, PROT_NONE) = 0
+mmap(0x7f15eb260000, 49152, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x179000) = 0x7f15eb260000
+mmap(0x7f15eb26c000, 12352, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f15eb26c000
 close(3)                                = 0
 access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libXi.so.6", O_RDONLY|O_CLOEXEC) = 3
 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200!\0\0\0\0\0\0"..., 832) = 832
 fstat(3, {st_dev=makedev(8, 10), st_ino=5382130, st_mode=S_IFREG|0644, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=128, st_size=63944, st_atime=1642600898 /* 2022-01-19T19:31:38.115968064+0530 */, st_atime_nsec=115968064, st_mtime=1485202967 /* 2017-01-24T01:52:47+0530 */, st_mtime_nsec=0, st_ctime=1600068376 /* 2020-09-14T12:56:16.169948228+0530 */, st_ctime_nsec=169948228}) = 0
-mmap(NULL, 2159240, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fac29ad6000
-mprotect(0x7fac29ae5000, 2093056, PROT_NONE) = 0
-mmap(0x7fac29ce4000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe000) = 0x7fac29ce4000
+mmap(NULL, 2159240, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f15eacd7000
+mprotect(0x7f15eace6000, 2093056, PROT_NONE) = 0
+mmap(0x7f15eaee5000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe000) = 0x7f15eaee5000
 close(3)                                = 0
 access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libXau.so.6", O_RDONLY|O_CLOEXEC) = 3
 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\240\r\0\0\0\0\0\0"..., 832) = 832
 fstat(3, {st_dev=makedev(8, 10), st_ino=5382109, st_mode=S_IFREG|0644, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=32, st_size=14440, st_atime=1642600898 /* 2022-01-19T19:31:38.115968064+0530 */, st_atime_nsec=115968064, st_mtime=1587454386 /* 2020-04-21T13:03:06+0530 */, st_mtime_nsec=0, st_ctime=1600068376 /* 2020-09-14T12:56:16.153940229+0530 */, st_ctime_nsec=153940229}) = 0
-mmap(NULL, 2109704, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fac298d2000
-mprotect(0x7fac298d4000, 2097152, PROT_NONE) = 0
-mmap(0x7fac29ad4000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7fac29ad4000
+mmap(NULL, 2109704, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f15eaad3000
+mprotect(0x7f15eaad5000, 2097152, PROT_NONE) = 0
+mmap(0x7f15eacd5000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7f15eacd5000
 close(3)                                = 0
 access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libXdmcp.so.6", O_RDONLY|O_CLOEXEC) = 3
 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\20\21\0\0\0\0\0\0"..., 832) = 832
 fstat(3, {st_dev=makedev(8, 10), st_ino=5382120, st_mode=S_IFREG|0644, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=48, st_size=22616, st_atime=1642600898 /* 2022-01-19T19:31:38.115968064+0530 */, st_atime_nsec=115968064, st_mtime=1488464839 /* 2017-03-02T19:57:19+0530 */, st_mtime_nsec=0, st_ctime=1600068376 /* 2020-09-14T12:56:16.165946228+0530 */, st_ctime_nsec=165946228}) = 0
-mmap(NULL, 2117760, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fac296cc000
-mprotect(0x7fac296d1000, 2093056, PROT_NONE) = 0
-mmap(0x7fac298d0000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7fac298d0000
+mmap(NULL, 2117760, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f15ea8cd000
+mprotect(0x7f15ea8d2000, 2093056, PROT_NONE) = 0
+mmap(0x7f15eaad1000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x4000) = 0x7f15eaad1000
 close(3)                                = 0
 access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libm.so.6", O_RDONLY|O_CLOEXEC) = 3
 read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\200\272\0\0\0\0\0\0"..., 832) = 832
 fstat(3, {st_dev=makedev(8, 10), st_ino=2755014, st_mode=S_IFREG|0644, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=3328, st_size=1700792, st_atime=1642600898 /* 2022-01-19T19:31:38.115968064+0530 */, st_atime_nsec=115968064, st_mtime=1607359089 /* 2020-12-07T22:08:09+0530 */, st_mtime_nsec=0, st_ctime=1608220748 /* 2020-12-17T21:29:08.744477150+0530 */, st_ctime_nsec=744477150}) = 0
-mmap(NULL, 3789144, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fac2932e000
-mprotect(0x7fac294cb000, 2093056, PROT_NONE) = 0
-mmap(0x7fac296ca000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19c000) = 0x7fac296ca000
+mmap(NULL, 3789144, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f15ea52f000
+mprotect(0x7f15ea6cc000, 2093056, PROT_NONE) = 0
+mmap(0x7f15ea8cb000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x19c000) = 0x7f15ea8cb000
 close(3)                                = 0
 access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libgcc_s.so.1", O_RDONLY|O_CLOEXEC) = 3
 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\300*\0\0\0\0\0\0"..., 832) = 832
 fstat(3, {st_dev=makedev(8, 10), st_ino=2757870, st_mode=S_IFREG|0644, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=192, st_size=96616, st_atime=1642600898 /* 2022-01-19T19:31:38.115968064+0530 */, st_atime_nsec=115968064, st_mtime=1583843394 /* 2020-03-10T17:59:54+0530 */, st_mtime_nsec=0, st_ctime=1600068358 /* 2020-09-14T12:55:58.497116790+0530 */, st_ctime_nsec=497116790}) = 0
-mmap(NULL, 2192432, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fac29116000
-mprotect(0x7fac2912d000, 2093056, PROT_NONE) = 0
-mmap(0x7fac2932c000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16000) = 0x7fac2932c000
+mmap(NULL, 2192432, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f15ea317000
+mprotect(0x7f15ea32e000, 2093056, PROT_NONE) = 0
+mmap(0x7f15ea52d000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x16000) = 0x7f15ea52d000
 close(3)                                = 0
 access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
-mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fac2b20a000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f15ec40b000
 openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/libXext.so.6", O_RDONLY|O_CLOEXEC) = 3
 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\2205\0\0\0\0\0\0"..., 832) = 832
 fstat(3, {st_dev=makedev(8, 10), st_ino=5382122, st_mode=S_IFREG|0644, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=144, st_size=73640, st_atime=1642600898 /* 2022-01-19T19:31:38.115968064+0530 */, st_atime_nsec=115968064, st_mtime=1414221022 /* 2014-10-25T12:40:22+0530 */, st_mtime_nsec=0, st_ctime=1600068376 /* 2020-09-14T12:56:16.165946228+0530 */, st_ctime_nsec=165946228}) = 0
-mmap(NULL, 2169496, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fac28f04000
-mprotect(0x7fac28f15000, 2093056, PROT_NONE) = 0
-mmap(0x7fac29114000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x10000) = 0x7fac29114000
+mmap(NULL, 2169496, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f15ea105000
+mprotect(0x7f15ea116000, 2093056, PROT_NONE) = 0
+mmap(0x7f15ea315000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x10000) = 0x7f15ea315000
 close(3)                                = 0
 access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libbsd.so.0", O_RDONLY|O_CLOEXEC) = 3
 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0P4\0\0\0\0\0\0"..., 832) = 832
 fstat(3, {st_dev=makedev(8, 10), st_ino=2757829, st_mode=S_IFREG|0644, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=160, st_size=80104, st_atime=1642600898 /* 2022-01-19T19:31:38.115968064+0530 */, st_atime_nsec=115968064, st_mtime=1579182603 /* 2020-01-16T19:20:03+0530 */, st_mtime_nsec=0, st_ctime=1600068358 /* 2020-09-14T12:55:58.457096791+0530 */, st_ctime_nsec=457096791}) = 0
-mmap(NULL, 2179152, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fac28cef000
-mprotect(0x7fac28d02000, 2093056, PROT_NONE) = 0
-mmap(0x7fac28f01000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x12000) = 0x7fac28f01000
-mmap(0x7fac28f03000, 80, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fac28f03000
+mmap(NULL, 2179152, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f15e9ef0000
+mprotect(0x7f15e9f03000, 2093056, PROT_NONE) = 0
+mmap(0x7f15ea102000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x12000) = 0x7f15ea102000
+mmap(0x7f15ea104000, 80, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7f15ea104000
 close(3)                                = 0
 access("/etc/ld.so.nohwcap", F_OK)      = -1 ENOENT (No such file or directory)
 openat(AT_FDCWD, "/lib/x86_64-linux-gnu/librt.so.1", O_RDONLY|O_CLOEXEC) = 3
 read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\"\0\0\0\0\0\0"..., 832) = 832
 fstat(3, {st_dev=makedev(8, 10), st_ino=2755027, st_mode=S_IFREG|0644, st_nlink=1, st_uid=0, st_gid=0, st_blksize=4096, st_blocks=64, st_size=31680, st_atime=1642600898 /* 2022-01-19T19:31:38.115968064+0530 */, st_atime_nsec=115968064, st_mtime=1607359089 /* 2020-12-07T22:08:09+0530 */, st_mtime_nsec=0, st_ctime=1608220748 /* 2020-12-17T21:29:08.764477149+0530 */, st_ctime_nsec=764477149}) = 0
-mmap(NULL, 2128864, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fac28ae7000
-mprotect(0x7fac28aee000, 2093056, PROT_NONE) = 0
-mmap(0x7fac28ced000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7fac28ced000
+mmap(NULL, 2128864, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7f15e9ce8000
+mprotect(0x7f15e9cef000, 2093056, PROT_NONE) = 0
+mmap(0x7f15e9eee000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7f15e9eee000
 close(3)                                = 0
-mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fac2b208000
-mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fac2b205000
-arch_prctl(ARCH_SET_FS, 0x7fac2b205740) = 0
-mprotect(0x7fac2add9000, 16384, PROT_READ) = 0
-mprotect(0x7fac2a9ec000, 4096, PROT_READ) = 0
-mprotect(0x7fac28ced000, 4096, PROT_READ) = 0
-mprotect(0x7fac28f01000, 4096, PROT_READ) = 0
-mprotect(0x7fac2a7d1000, 4096, PROT_READ) = 0
-mprotect(0x7fac29ad4000, 4096, PROT_READ) = 0
-mprotect(0x7fac298d0000, 4096, PROT_READ) = 0
-mprotect(0x7fac2a295000, 4096, PROT_READ) = 0
-mprotect(0x7fac2a5ca000, 4096, PROT_READ) = 0
-mprotect(0x7fac29114000, 4096, PROT_READ) = 0
-mprotect(0x7fac2932c000, 4096, PROT_READ) = 0
-mprotect(0x7fac296ca000, 4096, PROT_READ) = 0
-mprotect(0x7fac29ce4000, 4096, PROT_READ) = 0
-mprotect(0x7fac2a05f000, 40960, PROT_READ) = 0
-mprotect(0x7fac2b004000, 4096, PROT_READ) = 0
-mprotect(0x562b87583000, 4096, PROT_READ) = 0
-mprotect(0x7fac2b231000, 4096, PROT_READ) = 0
-munmap(0x7fac2b20e000, 130122)          = 0
-set_tid_address(0x7fac2b205a10)         = 29957
-set_robust_list(0x7fac2b205a20, 24)     = 0
-rt_sigaction(SIGRTMIN, {sa_handler=0x7fac2a7d8cb0, sa_mask=[], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x7fac2a7e5980}, NULL, 8) = 0
-rt_sigaction(SIGRT_1, {sa_handler=0x7fac2a7d8d50, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x7fac2a7e5980}, NULL, 8) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f15ec409000
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7f15ec406000
+arch_prctl(ARCH_SET_FS, 0x7f15ec406740) = 0
+mprotect(0x7f15ebfda000, 16384, PROT_READ) = 0
+mprotect(0x7f15ebbed000, 4096, PROT_READ) = 0
+mprotect(0x7f15e9eee000, 4096, PROT_READ) = 0
+mprotect(0x7f15ea102000, 4096, PROT_READ) = 0
+mprotect(0x7f15eb9d2000, 4096, PROT_READ) = 0
+mprotect(0x7f15eacd5000, 4096, PROT_READ) = 0
+mprotect(0x7f15eaad1000, 4096, PROT_READ) = 0
+mprotect(0x7f15eb496000, 4096, PROT_READ) = 0
+mprotect(0x7f15eb7cb000, 4096, PROT_READ) = 0
+mprotect(0x7f15ea315000, 4096, PROT_READ) = 0
+mprotect(0x7f15ea52d000, 4096, PROT_READ) = 0
+mprotect(0x7f15ea8cb000, 4096, PROT_READ) = 0
+mprotect(0x7f15eaee5000, 4096, PROT_READ) = 0
+mprotect(0x7f15eb260000, 40960, PROT_READ) = 0
+mprotect(0x7f15ec205000, 4096, PROT_READ) = 0
+mprotect(0x555c1f068000, 4096, PROT_READ) = 0
+mprotect(0x7f15ec432000, 4096, PROT_READ) = 0
+munmap(0x7f15ec40f000, 130122)          = 0
+set_tid_address(0x7f15ec406a10)         = 25141
+set_robust_list(0x7f15ec406a20, 24)     = 0
+rt_sigaction(SIGRTMIN, {sa_handler=0x7f15eb9d9cb0, sa_mask=[], sa_flags=SA_RESTORER|SA_SIGINFO, sa_restorer=0x7f15eb9e6980}, NULL, 8) = 0
+rt_sigaction(SIGRT_1, {sa_handler=0x7f15eb9d9d50, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART|SA_SIGINFO, sa_restorer=0x7f15eb9e6980}, NULL, 8) = 0
 rt_sigprocmask(SIG_UNBLOCK, [RTMIN RT_1], NULL, 8) = 0
 prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
-brk(NULL)                               = 0x562b88ccd000
-brk(0x562b88cee000)                     = 0x562b88cee000
+brk(NULL)                               = 0x555c1f3fd000
+brk(0x555c1f41e000)                     = 0x555c1f41e000
 umask(000)                              = 022
 stat("/var/log/citrix/", {st_dev=makedev(8, 10), st_ino=671909, st_mode=S_IFDIR|0755, st_nlink=2, st_uid=1001, st_gid=0, st_blksize=4096, st_blocks=8, st_size=4096, st_atime=1634105125 /* 2021-10-13T11:35:25.500127075+0530 */, st_atime_nsec=500127075, st_mtime=1642144005 /* 2022-01-14T12:36:45.379095669+0530 */, st_mtime_nsec=379095669, st_ctime=1642144005 /* 2022-01-14T12:36:45.379095669+0530 */, st_ctime_nsec=379095669}) = 0
 getuid()                                = 1000
-rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fac2aa31040}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f15ebc32040}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
 socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC, 0) = 3
 connect(3, {sa_family=AF_UNIX, sun_path="/var/log/citrix/.ctxlogsocket"}, 110) = 0
 close(3)                                = 0
-rt_sigaction(SIGPIPE, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fac2aa31040}, NULL, 8) = 0
+rt_sigaction(SIGPIPE, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f15ebc32040}, NULL, 8) = 0
 openat(AT_FDCWD, "/var/log/citrix/.ctxlogconf", O_RDWR|O_CREAT, 0777) = 3
 umask(022)                              = 000
 ftruncate(3, 504)                       = 0
-mmap(NULL, 504, PROT_READ|PROT_WRITE, MAP_SHARED, 3, 0) = 0x7fac2b230000
+mmap(NULL, 504, PROT_READ|PROT_WRITE, MAP_SHARED, 3, 0) = 0x7f15ec431000
 close(3)                                = 0
-rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fac2aa31040}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fac2aa31040}, 8) = 0
+rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f15ebc32040}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f15ebc32040}, 8) = 0
 socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC, 0) = 3
 connect(3, {sa_family=AF_UNIX, sun_path="/var/log/citrix/.ctxlogsocket"}, 110) = 0
 write(3, "\17\0\2\0\0\0citrix-sweet\0", 19) = 19
-rt_sigaction(SIGPIPE, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fac2aa31040}, NULL, 8) = 0
-fstat(1, {st_dev=makedev(8, 7), st_ino=61767, st_mode=S_IFREG|0777, st_nlink=1, st_uid=1000, st_gid=1000, st_blksize=4096, st_blocks=0, st_size=0, st_atime=1642653730 /* 2022-01-20T10:12:10.901169700+0530 */, st_atime_nsec=901169700, st_mtime=1642654708 /* 2022-01-20T10:28:28.727814600+0530 */, st_mtime_nsec=727814600, st_ctime=1642654708 /* 2022-01-20T10:28:28.727814600+0530 */, st_ctime_nsec=727814600}) = 0
-write(1, "Sweet worlds!", 13)           = 13
-exit_group(0)                           = ?
-+++ exited with 0 +++
+rt_sigaction(SIGPIPE, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f15ebc32040}, NULL, 8) = 0
+fstat(1, {st_dev=makedev(8, 7), st_ino=61767, st_mode=S_IFREG|0777, st_nlink=1, st_uid=1000, st_gid=1000, st_blksize=4096, st_blocks=0, st_size=0, st_atime=1642660497 /* 2022-01-20T12:04:57.319213100+0530 */, st_atime_nsec=319213100, st_mtime=1642661315 /* 2022-01-20T12:18:35.340063700+0530 */, st_mtime_nsec=340063700, st_ctime=1642661315 /* 2022-01-20T12:18:35.340063700+0530 */, st_ctime_nsec=340063700}) = 0
+write(1, "Sweet world!", 12)            = 12
+exit_group(1)                           = ?
++++ exited with 1 +++
