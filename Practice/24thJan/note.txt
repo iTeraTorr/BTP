@@ -1,0 +1,2 @@
+Adding a section in a elf file. 
+Source: https://stackoverflow.com/questions/1088128/adding-section-to-elf-file
