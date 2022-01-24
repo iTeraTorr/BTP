@@ -1,0 +1,126 @@
+->Visual C++ (GUI Interface, but not supported on Linux platform),
+->GNU Compiler Collection (GCC), 
+->and Clang/Low Level Virtual Machine (LLVM) are three mainstream C/C++ compilers in the industry.
+
+ALSA: Advanced Linux Sound Architecture 
+
+
+-O0 , -O1 , -O2 , -O3 are the flag used (generally O3 is used) while compiling to optimize the executable binary file
+>>Volatile keyword can hinder optimization. 
+
+---------------------------------------------
+
+Clang vs GCC
+
+Clang Documentation: https://clang.llvm.org/docs/CommandGuide/clang.html
+
+->GCC does not give warnings for unused variable while Clang does
+->LLVM IR bitcode of 2011 and 2017 standard are same but 1999 and 2011 differ, 
+  IR: immediate representation
+->*.bc is the LLVM IR BitCode file (bc : bitcode)
+->LLVM: What is meant by front end for a programming language?
+-->>What differences are created between various standards of C/C++ -->> https://www.opensourceforu.com/2017/04/different-c-standards-story-c/
+LLVM: Low Level Virtual Machine
+
+--> the sequence is *.i -> *.s -> *.bc -> *.o -> executable_file
+--> i-to-s is one code gen step
+--> s2bc is one code gen
+--> *.bc -> *.o is another gen stage
+---------------------------------------------
+
+Tried Valgrind Memcheck today
+->Segmentation faults can be detected by Valgrind
+->Memory was leaking, but I fixed it with "valgrind -v --leak-check=yes ./file" command (used -g while compiling) 
+or simply "valgrind ./file" (as simple as that XD)
+->It's a great tool to detect memory leak or invalid writes faster
+->Valgrind starts a virtual machine a runs our program there to find memory errors
+
+---------------------------------------------
+
+Tried Valgrind Massif tool today
+-->"ms_print massif.out.27467" gives a graph (of massif.out.27467) showing memory consumption throughout the execution of the program
+--> To use massif simple use "valgrind -v --tool=massif ./file"
+-->Massif is used to visualize the memory allocated in stack and heap during execution
+
+---------------------------------------------
+
+Tried GDB(Notes Below) aka gdb again today: A good reference: https://www.youtube.com/watch?v=7D3R65Vm3B8 & https://www.youtube.com/watch?v=svG6OPyKsrw
+Whenever you wish to use gdb, use the -g compiler flag with g++/gcc. -g keeps the debugging symbols in the object file.
+To run shell commands in gdb, use ! symbol, eg !pwd
+file:  use this to load an executable in gdb. Eg file exe
+r : run the program
+>we can give arguments as, run arg1 arg2 ... < infile
+b: set a breakpoint
+n: next instruction
+step: slower than next (walk through each instruction)-go inside each function whatever it is listed
+l: pulls up the source code(10 instructions) centered around the current line
+l 12: goes to line number 12
+p variable: or print variable, prints the current value of variables
+p variable=32 : sets the variable to 32 during execution
+up : it takes the code execution one call above in the function call stack
+down : it takes the code execution one call below in the function call stack
+display varname: It will keep track of the value of the varname variable and print it each time after each command
+undisplay varname_id: It will stop keeping track of the value of the varname variable and stop printing it each time after each command
+backtrace: or bt, prints the entire function call stack
+finish: finish the current function call(call frame) and stop
+info locals: prints out the current value of all the local variables
+info registers : or "i r" gives the current values stored in registers
+r: to rerun the program(during execution)
+info breakpoints: or "i b" give info of all the set breakpoints
+b file_name.extension:line_number : sets a new breakpoint at line 14
+c: Continue-it is basically like run command, but it runs the code from whereever we are at present unlike run that always runs it from beginning
+x string_variable: show content of string_variable at a much lower level
+disable: disable all the breakpoints
+watch: sets a watchpoint to see when the value of a variable changes, and it informs as soon as it changes
+bt: to be explore this backtrack command
+delete breakpoint_id: delete breakpoint associated with breakpoint_id
+delete: delete all breakpoints
+whatis varname: prints the type of varname variable
+target record-full: records every instruction is is run so that in future we can do reverse debugging, i.e. stepping back in time.
+disas func: It will show the assembler code for the method func
+set disassembly-flavor intel: gives intel disassembly code from now rather than AT&T
+set $eax=0 :  Set eax register to '0'
+set var varname=value: set the value of variable while running
+quit: quit GDB
+
+-->>Difference between step command and next command is not clear
+----------------------------------------------
+
+Started Prolog:
+>> "It is a declarative programming paradigm, which means programming is done with expressions or declarations instead of statements.
+Functional programming is a form of declarative programming that expresses a computation directly as pure functional transformation of data."
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

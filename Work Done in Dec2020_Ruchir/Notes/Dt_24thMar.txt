@@ -1,0 +1,20 @@
+Started reading Paper(from Meeting#11, 17thFeb) - Property Templates for Checking Source Code Security
+
+(Didn't understood what is it aimed at)
+
+Started working on Shellcodes now
+Hello World to x86 Assembly Languagehttps://www.youtube.com/watch?v=G4wA7Zm-DIU&list=PLzKIBgD3ky20YVgE8Rp3fEt42uICoaOp9&index=2
+All the possible system calls are located here: /usr/include/x86_64-linux-gnu/asm/unistd_32.h
+ShellCode Resources
+a. http://shell-storm.org/shellcode
+b. https://www.exploit-db.com/
+gcc -fno-stack-protector -z execstack shellcode.c -o shellcode
+a. Here -fno-stack-protector tells that we are disabling the stack protection from buffer overflows
+b. -z execstack tells that we want the stack to be executable
+gdb -q ./exe
+a. here -q loads up gdb in quite mode
+b. in gdb, set disassembly-flavor intel, uses x86 assembly code rather than AT&T
+How to make our own Shellcodes?
+>int (*ret)()= (int(*)()) code;
+>ret();
+To make unsigned char code[] into callable function ret()

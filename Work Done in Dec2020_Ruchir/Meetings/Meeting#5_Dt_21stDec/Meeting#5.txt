@@ -1,0 +1,11 @@
+Sunday: 11am to 12pm (Summary of achieved activities)
+Thursday: 4-5pm (Give update meeting)
+ Application for Student Design Project as a part of BTP/MTP: 
+ 5.Educational Toys
+ 6.Any other Electronic Toys
+
+ ->Cooperative Game Design:
+ a. Age groups 6-13 Yrs
+ b. Electronics ideally with arduino board
+
+ Examples: Tic Tac Toe, Maze games, Cooperative concepts via games

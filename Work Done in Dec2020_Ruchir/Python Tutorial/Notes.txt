@@ -1,0 +1,241 @@
+('string' in variable) -> returns a boolean value if 'string' exists in variable string
+len(string) ->gives length of string
+string.find(string) ->gives index of first appearance of the given arg
+string.replace(string, alt_stirng) -> replaces all the appearances of string with alt_string in 'string' variable
+-----------------------
+import math
+matrix=[
+    1,2,3,4,4,5,6,10,7,4,8,9,7]
+matrix.sort()
+matrix.reverse()
+num2=matrix
+num2[0]=-10
+print(matrix)
+print(num2)
+
+-------------------------------
+Tuples are immutable
+coor=(1,2,3)
+x,y,z=coor
+print(x,y,z)
+--------------------------
+Dictionary:
+customer={
+    "name":"Rchir",
+    "age": 30,
+    "is_Veri": False
+}
+
+customer["birthday"] -->will give error that birthday do not exit
+But
+customer.get("birthday") --> will return 'None' that represents absence of value
+Moreover
+customer.get("birthday","Jan 1, 1989") --> will return 'Jan 1, 1989' if "birthday" do not exist
+---------------------------------
+message = input(">")
+words=message.split(' ')
+emojis = {
+    ":)" : "😀",
+    ":(" : "😔"
+}
+output=""
+for word in words:
+    output+=emojis.get(word,word)+" "
+print(output)
+------------------------------------
+#functions in Python
+def greet_user(name, name2):
+    print(f"Hi there, {name} {name2}")
+    print("Welcome")
+
+
+greet_user(name2="Mehta", name="Ruchir")
+
+--> Use keyword arguments after the positional arguments
+--------------------------------
+try:
+    age=int(input('Age: '))
+    income=20000
+    risk=income/age
+    print(age)
+except ValueError:
+    print('Invalid Value')
+except ZeroDivisionError:
+    print('Denometaor is 0')
+----------------------------------
+Use comments to explain whys and hows and not whats
+-----------------------------------
+Classes and Objects
+
+#Without constructor
+
+class Point:
+    def move(self):
+        print("move")
+
+    def draw(self):
+        print("draw")
+
+
+point1 = Point()
+point1.x=10
+point1.y=20
+
+point1.draw()
+
+point2=Point()
+point2.x=1
+print(point2.x)
+
+#With constructor
+
+class Point:
+    def __init__(self,x,y): #Constructor
+        self.x=x
+        self.y=y
+    def move(self):
+        print("move")
+
+    def draw(self):
+        print("draw")
+
+
+point1 = Point(10,20)
+
+point1.draw()
+
+point2=Point(30,40)
+point2.x=1
+print(point2.x)
+-----------------------------------
+#inheritance
+class Animal:
+    def walk(self):
+        print("Walk")
+
+class Dog(Animal):
+    pass
+class Cat(Animal):
+    pass
+
+pup=Dog()
+pup.walk()
+------------------------------
+#Modules
+import converters
+from converters import say #for importing a specific functions
+
+#Line 129 and 130 are same
+converters.say()
+say()
+print(converters.x)
+
+-----------------------------------
+Package is a container for multiple modules. A package is a directory or folder.
+Each package(also a directory) contains a __init__.py file, for it to be considered as a package
+
+# import modules.converters
+from modules import converters
+converters.say()
+print(converters.x)
+--------------------------------
+https://docs.python.org/3/py-modindex.html --> Contains all the modules that pyhton have builtin
+-------------------------------
+#Random module
+#random.random()
+#random.randint(start,end)
+#random.choice(list)
+import random
+
+class Dice:
+    def roll(self):
+        x=random.randint(1,6)
+        y=random.randint(1,6)
+        return x,y #return a tuple
+
+d1=Dice()
+print(d1.roll())
+        
+---------------------------------------------
+pypi.org --> All the custom made packages
+-------------------------------
+Machine learning:
+->Import data
+->Clean data
+->Split the data into training/test sets
+->Create a Model
+->Train the Model
+->Make Predictions
+->Evaluate and improve
+
+Libraries
+->Numpy
+->Pandas -->dataframe similar to excel
+->Matplotlib -->graphs and plots
+->Scikit-learn ->algorithms
+
+
+Generally: 70-80% training and 20-30% testing
+-------------------------------------------
+import pandas as pd
+from sklearn.tree import DecisionTreeClassifier
+
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
+
+df = pd.read_csv('music.csv')
+X=df.drop(columns=['genre'])
+Y=df['genre']
+X_train, X_test, Y_train, Y_test=train_test_split(X,Y,test_size=0.2)
+
+model = DecisionTreeClassifier()
+model.fit(X_train,Y_train)
+
+ans=model.predict(X_test)
+score=accuracy_score(Y_test, ans)
+print(score)
+----------------------------------
+#To save the model:
+import pandas as pd
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.externals import joblib #Saving and Loading models
+df = pd.read_csv('music.csv')
+X=df.drop(columns=['genre'])
+Y=df['genre']
+
+model =  DecisionTreeClassifier()
+model.fit(X,Y)
+
+joblib.dump(model,'music-recommender.joblib')
+--------------------------------------
+#To Load a model
+
+model=joblib.load('music-recommender.joblib')
+ans=model.predict([[21,1]])
+print(ans)
+------------------------------------
+#Visualizing Model
+import pandas as pd
+from sklearn.tree import DecisionTreeClassifier
+from sklearn import tree
+df = pd.read_csv('music.csv')
+X=df.drop(columns=['genre'])
+Y=df['genre']
+
+model =  DecisionTreeClassifier()
+model.fit(X,Y)
+
+tree.export_graphviz(model,out_file='music-recommender.dot', feature_names=['age','gender'], class_names=sorted(Y.unique()), label='all',rounded=True,filled=True)
+
+--------------------------------------------
+#Web dev with Django Python
+->It makes Fast, Scalable and Secure websites
+
+Framework: Library of resuable modules, framework defines structure of the application
+------------------------------------
+wsgi: Web Server Gateway Interface
+Bootstrap is a framework
+--------------------------------------------------
+To convert a python file into executable: https://ao.gl/how-to-package-a-python-app-using-nuitka/
+
+-------------------------------------------------------

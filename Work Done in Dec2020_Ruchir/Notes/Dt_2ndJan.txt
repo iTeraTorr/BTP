@@ -1,0 +1,5 @@
+a. Task 2.0_V2 completed
+b. Task 2.0_V2_decrypt completed
+c. Python executable was created using nuitka but not a single standalone file.
+d. Ctrl + D is not a signal, it's EOF (End-Of-File). It closes the stdin pipe. If read(STDIN) returns 0, it means stdin closed, which means Ctrl + D was hit (assuming there is a keyboard at the other end of the pipe).
+e. 

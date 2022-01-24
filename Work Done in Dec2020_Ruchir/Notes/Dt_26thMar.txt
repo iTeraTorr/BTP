@@ -1,0 +1,4 @@
+NASM tutorial started: https://www.youtube.com/watch?v=BWRR3Hecjao&list=PLetF-YjXm-sCH6FrTz4AQhfH6INDQvQSn&index=2
+To find the number of occurences of a particular string let say 'needle', use:  grep -o 'needle' file | wc -l
+Today, I executed gedit process using execve as well as shellcode.
+Now, I can make shellcode to execute any executable program as I have execve shellcode with me now.
