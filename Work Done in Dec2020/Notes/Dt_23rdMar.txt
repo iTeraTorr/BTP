@@ -1,3 +1,0 @@
-1. Memory in a computer is simply a storage place for data and instructions—data for storing numbers, letters, images, and anything else, and instructions that tell the computer what to do with the data
-2. Did complete https://blog.rapid7.com/2019/02/19/stack-based-buffer-overflow-attacks-what-you-need-to-know/
-3. Buffer Overflow protections include stack canaries, Address Space Layout Randomization (ASLR), compiler warnings, and hardware changes to prevent execution of code on the stack.

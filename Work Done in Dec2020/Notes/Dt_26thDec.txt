@@ -1,2 +1,0 @@
-Stack Smashing error(I just faced that): https://www.educative.io/edpresso/what-is-the-stack-smashing-detected-error
-Built an email sender

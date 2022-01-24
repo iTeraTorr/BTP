@@ -1,7 +1,0 @@
-Run install.sh
-
-it will scan the files from bin folder,
-will encript them according to unique id string (in folder enc)
-and then remove those files form bin.
-
-it will append the enc. key in the file present in decr folder
