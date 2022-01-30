@@ -1,0 +1,85 @@
+Reference: https://www.youtube.com/watch?v=bV0NJ7zvap8&list=PLetF-YjXm-sCH6FrTz4AQhfH6INDQvQSn&index=14
+Each syscall has an ID attached to it, that represents it.
+arguments to the syscalls are passed via registers in a fixed order. for reference, refer image in the same directory.
+there are 3 sections, .data, .text and .bss
+.data: all the data is defined
+.bss: allocate memory for future use, eg while reading user input
+.text: actual code
+label-label a part of code
+_start: OS first executes the _start label
+Linker will throw an error if it cannot find _start label
+global _start ; to let the linker know the address of _start
+
+Jumps, calls and Comparisons
+flags are like registers but they hold only one bit at a time
+
+pointers hold memory address of the data
+rip(eip,ip): index pointer: points to the next address to be executed in the control flow
+rsp(esp,sp):stack pointer: points to the top address of the stack
+rbp(ebp,bp): stack base pointer: points to the bottom of the stack
+...
+
+jmp is used to jmp to a particular label
+cmp (Comparisons) are used to take differnt control flow based on certain conditions
+various flags are set after making comparisons.
+For eg, cmp a,b will make the following flag changes
+if a=b, ZF=1
+if a!=b ZF=0
+- SF=msb(a-b)
+
+after comaprisons are made, a jump can be made based on the status of flag
+using various jump symbols, like je, jg
+for eg:
+cmp rax, 23
+je _doThis ; will jump to _doThis only if rax==23
+
+cmp rax, rbx
+jg _doThis ; will jump to _doThis if and only if rax>rbx
+
+registers as pointers:
+[rax] will treat the rax register as pointer
+For eg:
+mov rax, rbx ;It will load the value of rbx to rax
+mov rax, [rbx] ; It will load the value present at the memory location pointed by the register rbx.
+
+calls and jumps are essentially the same
+however the original position where the call was made can be returned to using 'ret'
+
+
+math operations
+after div operation, rdx register will hold the remainder
+
+
+stack
+you can only observe the data at the top of the stack
+push
+pop
+
+Macros
+example--
+exit ;
+;It automatically expands into
+;mov rax,60
+;mov rdi,0
+;syscall
+
+Defining Values with EQU
+
+Including External Files
+%include "filename.asm"
+;It will just copy paste the code from filename.asm to the current *.asm file
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

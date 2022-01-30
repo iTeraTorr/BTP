@@ -1,0 +1,23 @@
+>>Ghidra
+>>Learn Python and make its executable
+>>Github repo, read and learn about Git and Github
+>>Linux Assembly Book
+>>Programming from the ground up
+>>Shell Script to binary
+>>Solve a lot of crackmes on https://crackmes.one/
+>>Shell Scripting->> Hackerrank
+>>Missing Semester
+>>Reverse Engineering pwn.college Video
+>>Retuen Oriented Programming pwn.college Video
+>>LiveOverflow--->>Playlist
+->Prolog(get the executable code)
+->Python(get the executable code)
+->Rust(get the executable code)
+->GDB - Learn the intricacies -->Look how to see the values in the registers
+>>Make Slides presenting the work
+
+1. Buffer overflow attack: Read https://www.coengoedegebure.com/buffer-overflow-attacks-explained/
+and https://security.stackexchange.com/questions/20497/stack-overflows-defeating-canaries-aslr-dep-nx
+2. http://hmarco.org/renewssp/data/OnTheEffectivness-NX-SSP-RenewSSP-and-ASLR-Slides.pdf
+3. Heap spray: https://broken-stack.github.io/post/heapspray/
+4. Goto:  https://iitiiot.bitbucket.io/

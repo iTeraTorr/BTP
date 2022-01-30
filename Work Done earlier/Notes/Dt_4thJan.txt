@@ -1,0 +1,40 @@
+Bash parenthesis and brackets: https://stackoverflow.com/questions/31255699/double-parenthesis-with-and-without-dollar
+
+Self-Mutating C Program
+x86_64 assembly is used in this article.
+First step of self-mutating code is to be able to change the code at runtime.
+Code means the text section.
+The kernel controls permissions to each of these pages.Text section by default is readable and executable but not writable.
+We need to change permissions to be able to write to text section.
+Changing the permissions of a page can be done with the mprotect() function.
+The only tricky part of mprotect() is that the pointer you give it must be aligned to a page boundary.
+mprotect(addr, page_size, PROT_READ | PROT_WRITE | PROT_EXEC) will make the complete page, read, write and executable.
+if mprotect(addr, page_size, PROT_READ | PROT_WRITE | PROT_EXEC) returns -1, it failed
+disassemble of the binary and locating the foo function, and then understanding it
+grep -A5 "<foo>" foo.dis | tail -1 | tr $'\t' ' ' | tr -s ' ' --> This command returns the instruction that adds 1 to i in foo.c
+subl $0xffffff80 -->This occurs when 128 was added instead of one, and 129 onwards, the number of bytes for the instruction increses by 3
+Now we just need to know how to change the instruction:There are two ways
+a. 
+b. 
+functions are arranged in the text section in the order in which they are defined
+slight modification while compiling gcc -std=c99 -D_DEFAULT_SOURCE -o foo foomagic.c
+Now let's plan to do something big, like changing the whole function foo or like calling a shell
+>lookup for mprotect, format specifiers used, 
+>What is -D_BSD_SOURCE flag in gcc
+>Understand machine code for executing shells and understand how that function is called at https://www.exploit-db.com/exploits/13691
+>What is (*(void (*)()) shellcode)();
+>Learn to generate shell code, probably using NASM
+>inject shell code to open a gedit instead of shell
+>What is int (*ret)() = (int(*)())code; at https://www.exploit-db.com/shellcodes/48592
+>How does shr $0x8 adds 2 0s to the end in the shellcode
+>memcpy function
+
+
+
+
+
+
+
+
+
+

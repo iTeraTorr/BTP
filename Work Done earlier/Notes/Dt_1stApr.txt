@@ -1,0 +1,25 @@
+1. Made a really teensy elf executable for linux.
+2. It's still remaining, as understanding the structure of elf executable is still remaining.
+3. Learned to create .iso files using, https://www.howtogeek.com/228886/how-to-create-iso-files-from-discs-on-windows-mac-and-linux/
+4. and the Brasero tool mentioned there.
+5. To mount an iso file: https://linuxize.com/post/how-to-mount-iso-file-on-linux/
+6. ELF and its ceration: https://www.quora.com/How-are-exe-files-created-And-what-programming-language-are-used-in-creating-them
+7. Try mkisofs command for making iso files, i.e. :$~:mkisofs /path2dir/dest.iso /path2dir2/locOfFiles2BePackd
+
+ELF master- Learning Linux Binary Analysis by Ryan O'Neill
+objdump:
+1. View all data/code in every section of an ELF file: objdump -D <elf_object>
+2. View only program code in an ELF file: objdump -d <elf_object>
+3. View all symbols: objdump -tT <elf_object>
+
+objcopy:
+Analyze and modify elf object files
+
+strace:
+
+ltrace:
+
+ftrace(made by the author):
+
+readelf:
+

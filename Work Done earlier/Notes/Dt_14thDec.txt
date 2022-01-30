@@ -1,0 +1,5 @@
+>>Syscalls table with syscall numbers-->> https://ryanchapman.tumblr.com/post/36801038863/linux-system-call-table-for-x86-64
+>>calling read(something1,something2,something3) is exactly same as calling syscall(0,something1,something2,something3)
+>Python is written in C and when we write "$ python file.py", here, python is a ELF executable(binary of python.c that was first written)
+>SHA1 hashes of anything are always 160 bits long
+>echo $(python -c 'print len("fc614aa299a924960da33b875fb9cfaa641ea5bc")') -->such commands may become very powerful

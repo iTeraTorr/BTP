@@ -1,0 +1,36 @@
+Spiral_Matrix
+---------------------------------
+-->Tasks(Compare Metrics of clang and gcc)
+-->For instance, this could be:
+-->1. Size of binary geenrated , Clang: 12592 ; GCC: 12784 (GCC > Clang)
+-->2. Execution times of both executables, Clang: 0.0034674 s ; GCC: 0.0035372 s (almost same)
+  But Compilation time of Clang is almost 1.5 times the compilation time of GCC
+-->3. Nr. of variables used in both (I assume environment vars): That's 63 in both, found by strace command(in the execve sys call) on the executable
+-->4. Insight into the binaries with readelf and/or objdump etc
+4--> GCC has __cxa_finalize@plt, clock@plt, clock@plt  as extra sections
+----------------------------------
+now you have multiple variants of a same algorithm. Do a comparative analysis, you can use valgrind tool for this.
+
+1. https://valgrind.org/docs/manual/quick-start.html
+
+2. Try other tools listed at:
+https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis#C,_C++
+----------------------------------
+I have received programs on the task we discussed this monday.  
+
+I am giving some additional tasks for you:
+
+1. Use Clang compiler (not GCC) try to do it for 1999, 2011 and 2017 standards
+2. Then profile your programs for interesting metrics using the following tools:
+a. https://www.valgrind.org/docs/manual/mc-manual.html
+b. https://www.valgrind.org/docs/manual/ms-manual.html
+
+I will convene a meeting day after tomorrow. We shall discuss about your reflections on this task and extensions!
+-----------------------------------
+----------------------------------
+----------------------------------
+----------------------------------
+----------------------------------
+----------------------------------
+----------------------------------
+----------------------------------

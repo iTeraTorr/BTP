@@ -1,0 +1,10 @@
+Followed: https://www.muppetlabs.com/~breadbox/software/tiny/teensy.html
+return 42 from main()
+
+v1 -> 8168
+v2 -> 6056
+v3 -> 6056
+v4 -> 248 (using tiny.asm)
+v5 -> 240 (using tiny1.asm)
+v6 -> 4588 (using tiny.s)
+

@@ -1,0 +1,7 @@
+>Languages like PERL, Java, JavaScript, and C# use built-in safety mechanisms that minimize the likelihood of buffer overflow.
+>Stack-based buffer overflows are the most common. They use stack memory, which exists during the execution time of a function.
+>Heap-based attacks involve flooding the memory space allocated for a program beyond the memory used for current runtime operations. These attacks are harder to carry out than stack-based.
+> https://www.educative.io/edpresso/buffer-overflow
+>C and C++ are two languages that are highly susceptible to buffer overflow attacks.
+>Stack canaries
+>Address Space Layout Randomization(ASLR)

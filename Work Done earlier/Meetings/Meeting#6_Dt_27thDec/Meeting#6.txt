@@ -1,0 +1,12 @@
+>Complete Task 2.0 (i.e. creating the .c file)
+
+>Task 1.1 : Pass the content of the buffer to a file stream to a file residing on the secondary storage. That way we can invade secondary storage. Analyze it with valgrind memcheck. Here, if we press Ctrl+C then the program aborted.
+>Task 1.2 : Extend the current program of Task 1.1, but make a way such that it ignores the Ctrl+C signal. So even on pressing Ctrl+C, it is not aborted, but on killing it from the system monitor, it is killed.
+
+>Task 2.1 → identify various system calls on current .c file (created in task 2.0) to identify unique binary file signature 
+>Do good practice in analysing and debugging binary from GDB, DDD and Ghidra.
+>Learn tools {DDD tool}, and learn analyzing {core dump}.
+>Learn how to write intermediate variable values to a file from GDB.
+>Task 4 : Learn to generate .exe, .iso, .deb file from .sh script
+
+>Meeting time shifted to Wed 4-5pm weekly one meeting

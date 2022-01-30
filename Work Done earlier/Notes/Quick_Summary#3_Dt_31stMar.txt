@@ -1,0 +1,7 @@
+Running binary from SHC
+Generate .exe, .iso files
+Determining featuring signature of a file(making of toolBox.sh)
+Brian Raitar portal(http://www.muppetlabs.com/~breadbox/software/tiny)
+Giant-Black-Book-Computer-Viruses by Ludwig
+The Little Black BookofComputer Viruses
+Learning Linux Binary Analysis by Ryan O'Neill (The ELF Master)
