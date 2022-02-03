@@ -1,9 +1,0 @@
-a. Start reading Black-Hat Conferences papers
-b. Take a look at CVE databases
-c. Task6: Transfer files over network from one pc to a remote pc on a TCP/IP model(firstly try on a different ports on local machine)
-d. Debian-pack malware into debian file
-e. Use Debian analyzer to identify the vulnerability. How debian packages are verified?
-f. Task7: Install CLAM Antivirus from one of the linux repository
-g. Consult the infected debian with CLAM AV and see if it identifies it or not.
-h. If it does, then obfuscate the code so that it can bypass it.
-i. Buffer Overflow: https://blog.rapid7.com/2019/02/19/stack-based-buffer-overflow-attacks-what-you-need-to-know/

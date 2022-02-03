@@ -1,1 +1,0 @@
-/media/ruchir/iTeraTorr/BTP/.venv/lib/python3.6/site-packages/nuitka/build/static_src/InspectPatcher.c

@@ -47,6 +47,7 @@ Tried Valgrind Massif tool today
 Tried GDB(Notes Below) aka gdb again today: A good reference: https://www.youtube.com/watch?v=7D3R65Vm3B8 & https://www.youtube.com/watch?v=svG6OPyKsrw
 Whenever you wish to use gdb, use the -g compiler flag with g++/gcc. -g keeps the debugging symbols in the object file.
 To run shell commands in gdb, use ! symbol, eg !pwd
+To pass the output of gdb to a file: https://stackoverflow.com/questions/5941158/gdb-print-to-file-instead-of-stdout
 file:  use this to load an executable in gdb. Eg file exe
 r : run the program
 >we can give arguments as, run arg1 arg2 ... < infile

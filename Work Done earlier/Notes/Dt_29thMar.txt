@@ -1,3 +1,0 @@
-For security related stuff, this is a very cool channel: https://www.youtube.com/channel/UCMqUl4U_8LwHiXT09_ouzxQ
-Purpose of lea instruction in assembly: https://stackoverflow.com/questions/1658294/whats-the-purpose-of-the-lea-instruction
-Function pointers from : https://www.youtube.com/watch?v=d_l129470-k&list=PL7B2bn3G_wfD8xy4lUaoItwwJ3zKlpuUe&index=8

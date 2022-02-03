@@ -1,3 +1,0 @@
-1. Data section of assembly program never changes at runtime
-2. Big Endian is commonly used in Networking application, while Little Endian is most
-commonly used in processors

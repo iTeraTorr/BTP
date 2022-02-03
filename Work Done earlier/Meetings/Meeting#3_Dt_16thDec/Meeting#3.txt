@@ -1,7 +1,0 @@
->>Make Slides presenting the work
->>See, how core dump can be utilised
->>Use gdb to process core dump files
->Once we go to the binary analysis, You can invoke, you can force readelf for object dump to generate this binaries 
-and also the output from ghidra Tool or ida pro or binary ninja. the outputs could be redirected to the file and you 
-can write a simple parsing file in Python to extract if some callbacks exist in the binary. So learn python, spend 
-atleast an hour or 2 everyday, so you can finish it off in 20 hours.
