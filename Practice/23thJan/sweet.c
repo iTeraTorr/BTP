@@ -1,5 +1,6 @@
 #include <stdio.h>
 int main(){
+	char* myName="Ruchir";
 	printf("Sweet world!");
-	return 1;
+	return 0;
 }
