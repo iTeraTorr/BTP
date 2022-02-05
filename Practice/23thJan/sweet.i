@@ -724,9 +724,9 @@ extern int __overflow (FILE *, int);
 
 # 2 "sweet.c" 2
 
-# 2 "sweet.c"
+
+# 3 "sweet.c"
 int main(){
- char* myName="Ruchir";
  printf("Sweet world!");
  return 0;
 }

@@ -2,8 +2,6 @@
 	.text
 	.section	.rodata
 .LC0:
-	.string	"Ruchir"
-.LC1:
 	.string	"Sweet world!"
 	.text
 	.globl	main
@@ -17,14 +15,11 @@ main:
 	.cfi_offset 6, -16
 	movq	%rsp, %rbp
 	.cfi_def_cfa_register 6
-	subq	$16, %rsp
-	leaq	.LC0(%rip), %rax
-	movq	%rax, -8(%rbp)
-	leaq	.LC1(%rip), %rdi
+	leaq	.LC0(%rip), %rdi
 	movl	$0, %eax
 	call	printf@PLT
 	movl	$0, %eax
-	leave
+	popq	%rbp
 	.cfi_def_cfa 7, 8
 	ret
 	.cfi_endproc
