@@ -68,6 +68,9 @@ main:
 	leaq	.LC0(%rip), %rdi
 	movl	$0, %eax
 	call	printf@PLT
+	movq	-8(%rbp), %rax
+	movq	%rax, %rdi
+	call	free@PLT
 	movl	$0, %eax
 	leave
 	.cfi_def_cfa 7, 8

@@ -10,5 +10,6 @@ int main(){
     p[1]=24;
     f(a,b);
     printf("Hello numbers: %d and %d and %d\n",p[0],p[1],a+b);
+    free(p);
     return 0;
 }
