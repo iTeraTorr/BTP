@@ -1,0 +1,14 @@
+#include<stdlib.h>
+#include<stdio.h>
+void f(int a, int b){
+int c=a+b;
+}
+int main(){
+    int *p=malloc(2*sizeof(int));
+    int a=2,b=3;
+    p[0]=23;
+    p[1]=24;
+    f(a,b);
+    printf("Hello numbers: %d and %d and %d\n",p[0],p[1],a+b);
+    return 0;
+}

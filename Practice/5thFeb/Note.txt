@@ -1,0 +1,2 @@
+Start virtual python environment via `python3 -m venv angr`
+Angr is a great tool for reverse engineering... and brute forcing something with constraints. Source: https://www.youtube.com/watch?v=RCgEIBfnTEI
