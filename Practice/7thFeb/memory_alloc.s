@@ -17,7 +17,7 @@ f:
 	movl	-24(%rbp), %eax
 	addl	%edx, %eax
 	movl	%eax, -4(%rbp)
-	nop
+	movl	-4(%rbp), %eax
 	popq	%rbp
 	.cfi_def_cfa 7, 8
 	ret
@@ -56,9 +56,7 @@ main:
 	movl	%edx, %esi
 	movl	%eax, %edi
 	call	f
-	movl	-16(%rbp), %edx
-	movl	-12(%rbp), %eax
-	leal	(%rdx,%rax), %ecx
+	movl	%eax, %ecx
 	movq	-8(%rbp), %rax
 	addq	$4, %rax
 	movl	(%rax), %edx

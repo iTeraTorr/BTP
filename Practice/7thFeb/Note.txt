@@ -1,1 +1,9 @@
 Used Binary Ninja Cloud for analysing elf files
+
+Params:
+1. rdi
+2. esi
+3. edx
+4. ecx
+
+return value is contained in eax or rax
