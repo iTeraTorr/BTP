@@ -4,6 +4,7 @@ compile the *.c file with `gcc -z execstack -o hello hello.c`
 Now to give shellcode as input use `(cat shellcode-raw; cat) | ./hello`
 
 
+`To generate shellcode from assembly follow below` 
 To assemble *.s file
 `gcc -nostdlib -static shellcode.s -o shellcode-elf`
 
