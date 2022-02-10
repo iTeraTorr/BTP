@@ -1,9 +1,11 @@
 Used Binary Ninja Cloud for analysing elf files
 
 Params:
-1. rdi
-2. esi
-3. edx
-4. ecx
+1. edi or rdi
+2. esi or rsi
+3. edx or rdx
+4. ecx or r10
 
 return value is contained in eax or rax
+
+system call number is also stored in rax register before calling `syscall`
