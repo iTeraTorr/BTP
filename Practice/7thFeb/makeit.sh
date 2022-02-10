@@ -7,3 +7,5 @@ strace -v -o stracedFile.txt ./memory_alloc > output.txt
 hexdump -v -C memory_alloc > hexdump.txt
 #objdump --full-contents --section=.comment memory_alloc
 # To read the content of a section in human readable form `readelf -p .dynstr ./memory_alloc`
+# objcopy --dump-section .text=shellcode-raw shellcode-elf (It dumps the .text section into `shellcode-raw` from the `shellcode-elf` file)
+
